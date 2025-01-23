@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapbox Map with Restaurant List</title>
+
+    <!-- Mapbox CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet" />
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="col vh-100 bg-success bg-primary d-flex justify-content-center">
+        <div class="col-10 bg-primary">
+            <div class="col-3 bg-light border-end p-3 overflow-auto">
+                <h2 class="h5 text-center mb-4">Restaurants</h2>
+                <div id="restaurant-list" class="list-group">
+                    <!-- Restaurants will be dynamically added here -->
+                </div>
+            </div>
+        
+            <!-- Map -->
+            <div id="map" class="col-9"></div>  
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Mapbox JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+
+    <!-- External Scripts -->
+    <script src="map.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+const listItem = document.createElement('div');
+listItem.className = 'gg';
+listItem.innerHTML = `
+    <p>ss</p>
+`;
